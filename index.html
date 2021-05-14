@@ -1,133 +1,197 @@
-<head>
-<!--*****************LEVIOOSA RESUME******************-->
-<!DOCTYPE html>
-<html>
-<head>
-
-<!--TITLE-->
-<title>LEVIOOSA RESUME</title>
-
-<!--ICON-->
-<link rel="shortcut icon" href="images/logo.png">
-
-<!--META TAGS-->
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="author" content="Mahesh">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta property="og:locale" content="en_US" />
-<meta property="og:url" content="" />
-<meta property="og:site_name" content="LEVIOOSA RESUME" />
-
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Ubuntu&display=swap" rel="stylesheet"> 
-
-<!--PLUGIN-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-<!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--EXTERNAL CSS-->
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="container">
-<section class="section_left">
-<center>
-<img src="https://source.unsplash.com/weekly?person" alt="AUTHOR">
-<h1 class="title">LEVIOOSA</h1>
-</center>
-<hr></hr>
-<h5 class="sub-title">CONTACT INFO</h5>
-<ul>
-<li><i class="fa fa-phone"></i> +xx-xxxxx-xxxxx</li>
-<li><i class="fa fa-envelope"></i> Levioosa@mail.com</li>
-<li><i class="fa fa-globe"></i> www.Levioosa.tech</li>
-<li><i class="fa fa-map-marker"></i> Street, Province, State, Country</li>
-<ul>
-<h5 class="sub-title">EDUCATION</h5>
-<em>Primary</em>
-<p>School name - year to year</p>
-<em>College</em>
-<p>College name - year to year</p>
-<em>Graduation</em>
-<p>Collage name - year to year</p>
-<h5 class="sub-title">LANGUAGE</h5>
-<label>Language-1</label>
-<div class="progress_container">
-<div class="progress_bar" style="width:25%"></div>
-</div>
-<label>Language-2</label>
-<div class="progress_container">
-<div class="progress_bar" style="width:25%"></div>
-</div>
-<label>Language-3</label>
-<div class="progress_container">
-<div class="progress_bar" style="width:90%"></div>
-</div>
-</section>
-<section class="section_right">
-<h1 class="title">PROFILE</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-<h1 class="title">EXPERIENCE</h1>
-<h5 class="sub-title">Web developer & designer</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<em style="float:right;">Period Of Work</em>
-<h5 class="sub-title">Web developer & designer</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<em style="float:right;">Period Of Work</em>
-<h5 class="sub-title">Web developer & designer</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<em style="float:right;">Period Of Work</em>
-<h1 class="title">PROFESSIONAL SKILLS</h1>
-<table>
-<tr>
-<td>
-HTML
-</td>
-<td>
-<div class="progress_container">
-<div class="progress_bar" style="width:90%"></div>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-HTML
-</td>
-<td>
-<div class="progress_container">
-<div class="progress_bar" style="width:90%"></div>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-HTML
-</td>
-<td>
-<div class="progress_container">
-<div class="progress_bar" style="width:90%"></div>
-</div>
-</td>
-</tr>
-<tr>
-<td>
-HTML
-</td>
-<td>
-<div class="progress_container">
-<div class="progress_bar" style="width:90%"></div>
-</div>
-</td>
-</tr>
-</table>
-</section>
-</div>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume/CV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <section id="app" class="container-fluid">
+      <header class="header position-relative">
+        <div class="headLine position-absolute"></div>
+        <div class="row">
+          <div class="col">
+            <h1 class="firstName text-break">
+              {{ firstName }}
+            </h1>
+            <h2 class="lastName text-nowrap">
+              {{ lastName }}
+            </h2>
+            <p class="jobTitle">
+              <i class="bi bi-circle-fill"></i>
+              <span class="text-break">
+                {{ jobTitle }}
+              </span>
+            </p>
+          </div>
+          <div class="col-auto d-none d-lg-block d-print-block">
+            <img v-bind:src.prop="photo" class="photo border border-2 border-dark rounded-circle img-fluid float-end">
+          </div>
+        </div>
+        <div class="middleLine position-absolute"></div>
+      </header>
+      <section class="content">
+        <div class="row">
+          <div class="col personal-details me-4">
+            <div class="row list-item me-5">
+              <div class="col-auto">
+                <div class="icon d-flex justify-content-center">
+                  <i class="bi bi-geo-alt-fill" role="img" aria-label="Location"></i>
+                </div>
+              </div>
+              <div class="col" style="white-space: pre-line;">
+                <p>{{ address }}<br/>{{ city }}, {{ postalCode }}, {{ country }}</p>
+              </div>
+            </div>
+            <div class="row list-item me-5">
+              <div class="col-auto align-self-center">
+                <div class="icon d-flex justify-content-center">
+                  <i class="bi bi-telephone-fill" role="img" aria-label="Telephone"></i>
+                </div>
+              </div>
+              <div class="col">
+                <a v-bind:href="'tel:'+ phone" class="text-decoration-none">
+                  <p>{{ phone }}</p>
+                </a>
+              </div>
+            </div>
+            <div class="row list-item me-5">
+              <div class="col-auto align-self-center">
+                <div class="icon d-flex justify-content-center">
+                  <i class="bi bi-envelope-fill" role="img" aria-label="Email"></i>
+                </div>
+              </div>
+              <div class="col">
+                <a v-bind:href="'mailto:'+ email" class="text-decoration-none">
+                  <p>{{ email }}</p>
+                </a>
+              </div>
+            </div>
+            <div class="row mt-5 me-5">
+              <div class="col">
+                <p class="title">Education</p>
+              </div>
+            </div>
+            <div class="row record" v-for="e in education">
+              <div class="col-auto bullet">
+                <i class="bi bi-record-circle"></i>
+              </div>
+              <div class="col">
+                <p class="fw-bold text-uppercase">
+                  {{ e.degree }}
+                </p>
+                <p class="fw-bold text-uppercase">
+                  {{ e.school }}, {{ e.graduationDate }}
+                </p>
+                <p>{{ e.description }}</p>
+              </div>
+            </div>
+            <div class="row mt-5 me-5">
+              <div class="col p-0">
+                <p class="title">Links</p>
+              </div>
+            </div>
+            <div class="row record me-5" v-for="l in links">
+              <div class="col-auto bullet mb-5">
+                <i class="bi bi-record-circle"></i>
+              </div>
+              <div class="col">
+                <p>
+                  {{ l.label }}:
+                  <a class="text-reset" v-bind:href.prop="l.link">
+                    {{ l.link }}
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="row mt-5 me-5">
+              <div class="col p-0">
+                <p class="title">Skills</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <ul class="ms-2">
+                  <li class="pb-2" v-for="skill in skills">
+                    {{ skill }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-5 me-5">
+              <div class="col p-0">
+                <p class="title">Languages</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <ul class="ms-2">
+                  <li class="pb-2" v-for="language in languages">
+                    {{ language }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col col-8">
+            <div class="row bullet">
+              <div class="col-auto pt-2">
+                <i class="bi bi-circle-fill"></i>
+              </div>
+              <div class="col">
+                <p class="title">About Me</p>
+              </div>
+            </div>
+            <div class="row record bullet">
+              <div class="col-auto">
+                <i class="bi bi-record-circle"></i>
+              </div>
+              <div class="col">
+                <p style="white-space: pre-line;">{{ professionalSummary }}</p>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-auto bullet pt-2">
+                <i class="bi bi-circle-fill"></i>
+              </div>
+              <div class="col">
+                <p class="title">Work Experience</p>
+              </div>
+            </div>
+            <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
+              <div class="col-auto">
+                <i class="bi bi-record-circle"></i>
+              </div>
+              <div class="col">
+                <p class="text-uppercase fw-bold position-relative">
+                  {{ employment.jobTitle }}
+                  <span>&nbsp;|&nbsp;{{ employment.startDate }} - {{ employment.endDate }}</span>
+                </p>
+                <p class="text-lowercase fst-italic fw-bold">
+                  {{ employment.employer }}, {{ employment.city }}
+                </p>
+                <p class="mb-0" v-for="achievement in employment.achievements">
+                  • {{ achievement }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="btn-group-fab d-print-none">
+      <div>
+        <button onclick="javascript:window.print()" type="button" class="btn btn-main btn-primary" title="Print">
+          <i class="bi bi-printer fs-3"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
